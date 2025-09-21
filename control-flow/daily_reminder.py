@@ -20,9 +20,9 @@ match priority:
 # Modify reminder if task is time-bound
 if time_bound == "yes":
     reminder += " that requires immediate attention today!"
-
 else:
-    reminder = "Note: " + reminder + ". Consider completing it when you have free time."
+    reminder = f"Note: {reminder}. Consider completing it when you have free time."
 
 # Display the reminder
 print("\nReminder:", reminder)
+
