@@ -1,15 +1,21 @@
-def perform_operation(num1: float, num2: float, operation: str):
-    """
-    Perform a basic arithmetic operation based on the given parameters.
+#!/usr/bin/env python3
+"""
+This module defines a function that performs basic arithmetic operations.
+"""
 
-    Parameters:
-        num1 (float): The first number
-        num2 (float): The second number
-        operation (str): One of 'add', 'subtract', 'multiply', 'divide'
+def perform_operation(num1, num2, operation):
+    """
+    Perform a basic arithmetic operation on two numbers.
+
+    Args:
+        num1 (float or int): The first number.
+        num2 (float or int): The second number.
+        operation (str): The operation to perform ('add', 'subtract', 'multiply', 'divide').
 
     Returns:
-        float or str: The result of the operation, or an error message for invalid cases.
+        float or str: The result of the operation, or an error message if invalid.
     """
+
     if operation == "add":
         return num1 + num2
     elif operation == "subtract":
@@ -21,4 +27,5 @@ def perform_operation(num1: float, num2: float, operation: str):
             return "Error: Division by zero"
         return num1 / num2
     else:
-        return "Error: Invalid operation"
+        return "Invalid operation"
+
